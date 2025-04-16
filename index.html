@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aiden Gonzalez-Rodiles Fan Page</title>
+    <meta name="description" content="Fan page for Aiden Gonzalez-Rodiles, a talented distance runner from Texas A&M University. Celebrate his achievements in cross-country and track & field.">
+    <meta name="keywords" content="Aiden Gonzalez-Rodiles, Texas A&M, distance runner, cross-country, track & field, A&M athlete, fan page, sports fan">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Aiden Gonzalez-Rodiles Fan Page">
+    <meta property="og:description" content="Celebrate the incredible athletic achievements of Aiden Gonzalez-Rodiles. A fan page dedicated to his success in track and cross-country.">
+    <meta property="og:image" content="link_to_image.jpg"> <!-- Replace with an image URL if you have one -->
+    <meta property="og:url" content="your_website_url">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="your_website_url">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,16 +72,16 @@
 
     <header>
         <h1>Aiden Gonzalez-Rodiles Fan Page</h1>
-        <p>Celebrate the incredible achievements of a rising star in collegiate athletics!</p>
+        <p>Celebrate the incredible achievements of Aiden Gonzalez-Rodiles, a rising star in distance running!</p>
     </header>
 
     <section>
-        <h2>About Aiden</h2>
-        <p>Aiden Gonzalez-Rodiles is a talented distance runner from Texas A&M University. Known for his impressive cross-country and track performances, Aiden has gained recognition for his dedication and athletic prowess.</p>
+        <h2>About Aiden Gonzalez-Rodiles</h2>
+        <p>Aiden Gonzalez-Rodiles is a talented distance runner from Texas A&M University. Known for his dedication to excellence in both cross-country and track & field, Aiden has achieved notable performances, including impressive times in the 5K, 8K, and 5000 meters. His passion for athletics and commitment to his sport have made him a standout athlete at Texas A&M University.</p>
     </section>
 
     <section>
-        <h2>Achievements</h2>
+        <h2>Aiden's Achievements</h2>
         <div class="stats">
             <div class="stat-card">
                 <h3>2024 Cross Country</h3>
@@ -97,6 +107,31 @@
         <button class="btn" onclick="submitMessage()">Submit Message</button>
         <p id="response"></p>
     </section>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Aiden Gonzalez-Rodiles",
+            "url": "your_website_url",
+            "image": "image_url.jpg", 
+            "sameAs": [
+                "link_to_social_media_profile",
+                "another_link"
+            ],
+            "jobTitle": "Distance Runner",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Texas A&M University"
+            },
+            "athleticEvent": {
+                "@type": "SportsEvent",
+                "name": "Track & Field, Cross-Country",
+                "startDate": "2024-09-01",
+                "endDate": "2024-12-31"
+            }
+        }
+    </script>
 
     <script>
         function submitMessage() {
