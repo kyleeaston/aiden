@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiden Gonzalez-Rodiles Fan Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .stat-card {
+            background-color: #e7f7e7;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .stat-card h3 {
+            margin-top: 0;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aiden Gonzalez-Rodiles Fan Page</h1>
+        <p>Celebrate the incredible achievements of a rising star in collegiate athletics!</p>
+    </header>
+
+    <section>
+        <h2>About Aiden</h2>
+        <p>Aiden Gonzalez-Rodiles is a talented distance runner from Texas A&M University. Known for his impressive cross-country and track performances, Aiden has gained recognition for his dedication and athletic prowess.</p>
+    </section>
+
+    <section>
+        <h2>Achievements</h2>
+        <div class="stats">
+            <div class="stat-card">
+                <h3>2024 Cross Country</h3>
+                <p><strong>Best 5K:</strong> 15:38</p>
+                <p><strong>Best 8K:</strong> 23:31</p>
+            </div>
+            <div class="stat-card">
+                <h3>Track & Field</h3>
+                <p><strong>5000m PB:</strong> 14:36.42</p>
+                <p><strong>Outdoor 5000m:</strong> 14:44.34</p>
+            </div>
+            <div class="stat-card">
+                <h3>High School</h3>
+                <p><strong>1600m:</strong> 4:21.14</p>
+                <p><strong>3200m:</strong> 9:17.13</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Fan Messages</h2>
+        <textarea id="fanMessage" rows="4" cols="50" placeholder="Leave a message for Aiden!"></textarea><br><br>
+        <button class="btn" onclick="submitMessage()">Submit Message</button>
+        <p id="response"></p>
+    </section>
+
+    <script>
+        function submitMessage() {
+            const message = document.getElementById('fanMessage').value;
+            const responseElement = document.getElementById('response');
+            
+            if (message) {
+                responseElement.textContent = "Thank you for your message! Aiden will love it.";
+                responseElement.style.color = "green";
+            } else {
+                responseElement.textContent = "Please enter a message before submitting.";
+                responseElement.style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>
